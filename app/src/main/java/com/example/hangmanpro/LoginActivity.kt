@@ -60,7 +60,6 @@ class LoginActivity : AppCompatActivity() {
                                 if (user.email == emailOrNick) {
                                     val nickname = user.nickname
                                     sharedPref.edit().putString("Nickname", nickname).apply()
-                                    println(emailOrNick)
                                     break
                                 }
                             }
@@ -70,7 +69,6 @@ class LoginActivity : AppCompatActivity() {
                                 val user = i.getValue(User::class.java)!!
                                 if (user.nickname == emailOrNick) {
                                     emailOrNick = user.email
-                                    println(emailOrNick)
                                     break
                                 }
                             }
