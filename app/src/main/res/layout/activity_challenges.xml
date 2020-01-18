@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChallengesActivity">
+    tools:context=".ChallengesActivity"
+    android:background="#000000">
 
     <EditText
         android:id="@+id/searchChallenge"
@@ -15,10 +16,14 @@
         android:gravity="center"
         android:hint="Enter someone's nick"
         android:inputType="textShortMessage|textPersonName"
+        android:shadowColor="#B5C9C2C2"
         android:singleLine="true"
         android:textAlignment="center"
+        android:textColor="#EBCBCB"
+        android:textColorHint="#D2FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
@@ -30,7 +35,9 @@
         android:text="play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchChallenge" />
+        app:layout_constraintTop_toBottomOf="@+id/searchChallenge"
+        android:background="#ffffff"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateChallengeActivity">
+    tools:context=".CreateChallengeActivity"
+    android:background="#000000">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
 
         <EditText
             android:id="@+id/word"
@@ -21,7 +23,9 @@
             android:ems="10"
             android:hint="Word"
             android:inputType="textShortMessage"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            android:textColor="#CEBDB7B7"
+            android:textColorHint="#DBD6D6" />
 
         <EditText
             android:id="@+id/description"
@@ -34,7 +38,10 @@
             android:hint="Description"
             android:inputType="textLongMessage"
             android:paddingLeft="10dp"
-            android:paddingBottom="30dp" />
+            android:paddingBottom="30dp"
+            android:textColor="#DDD8D8"
+            android:textColorHighlight="#00DAD4D4"
+            android:textColorHint="#ECE4E4" />
 
         <Button
             android:id="@+id/finishButton"

@@ -106,5 +106,10 @@ class LoginActivity : AppCompatActivity() {
 
 
         }
+        btnForgotPass.setOnClickListener {
+            val intent = Intent(this, ResetPasswordActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
